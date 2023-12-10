@@ -832,9 +832,6 @@
                         <td>' + (feature.properties['Nama'] !== null ? autolinker.link(feature.properties['Nama'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -852,6 +849,9 @@
                     <tr>\
                         <th scope="row">Kategori</th>\
                         <td>' + (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : ''
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -909,9 +909,6 @@
                         <td>' + (feature.properties['Wisata_Ala'] !== null ? autolinker.link(feature.properties['Wisata_Ala'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -929,6 +926,9 @@
                     <tr>\
                         <th scope="row">Kategori</th>\
                         <td>' + (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                 <tr>\
+                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : ''
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -986,9 +986,6 @@
                         <td>' + (feature.properties['Wisata Bud'] !== null ? autolinker.link(feature.properties['Wisata Bud'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1006,6 +1003,9 @@
                     <tr>\
                         <th scope="row">Kategori</th>\
                         <td>' + (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                 <tr>\
+                        <td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : ''
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
