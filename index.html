@@ -829,14 +829,14 @@ function pop_DesaWisata_11(feature, layer) {
 
     var popupContent = '<table>' \
         '<tr>' \
-        '<th scope="row">Nama</th>' +
-        '<td>' + (feature.properties['Nama'] !== null ? autolinker.link(feature.properties['Nama'].toLocaleString()) : '') + '</td>' \
+        '<th scope="row">Nama</th>' \
+        '<td>' + (feature.properties['Nama'] !== null ? autolinker.link(feature.properties['Nama'].toLocaleString()) : '') + '</td>' +
         '</tr>' \
         '<tr>' \
-        '<td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>' \
+        '<td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>' +
         '</tr>' \
         '<tr>' \
-        '<td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>' \
+        '<td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>' +
         '</tr>' \
         '<tr>' \
         '<th scope="row">Pengelola</th>' \
