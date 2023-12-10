@@ -827,35 +827,34 @@ function pop_DesaWisata_11(feature, layer) {
         mouseover: highlightFeature,
     });
 
-    var popupContent = '<table>' +
-    '<tr>' +
-    '<th scope="row">Nama</th>' +
+    var popupContent = '<table>' \
+    '<tr>' \
+    '<th scope="row">Nama</th>' \
     '<td>' + (feature.properties['Nama'] !== null ? autolinker.link(feature.properties['Nama'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
+    '</tr>' \
+    '<tr>' \
     '<td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
+    '</tr>' \
+    '<tr>' \
     '<td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
-    '<th scope="row">Pengelola</th>' +
+    '</tr>' \
+    '<tr>' \
+    '<th scope="row">Pengelola</th>' \
     '<td>' + (feature.properties['Desc_Pengelola'] !== null ? autolinker.link(feature.properties['Desc_Pengelola'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
-    '<th scope="row">HTM</th>' +
+    '</tr>' \
+    '<tr>' \
+    '<th scope="row">HTM</th>' \
     '<td>' + (feature.properties['Desc_HTM'] !== null ? autolinker.link(feature.properties['Desc_HTM'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
-    '<th scope="row">Jam Operasional</th>' +
+    '</tr>' \
+    '<tr>' \
+    '<th scope="row">Jam Operasional</th>' \
     '<td>' + (feature.properties['Desc_Jam Operational'] !== null ? autolinker.link(feature.properties['Desc_Jam Operational'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
-    '<tr>' +
-    '<th scope="row">Kategori</th>' +
+    '</tr>' \
+    '<tr>' \
+    '<th scope="row">Kategori</th>' \
     '<td>' + (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') + '</td>' +
-    '</tr>' +
+    '</tr>' \
     '</table>';
-
     layer.bindPopup(popupContent, { maxHeight: 400 });
 }
 
