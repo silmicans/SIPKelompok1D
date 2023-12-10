@@ -986,29 +986,29 @@ function pop_WisataBudaya_13(feature, layer) {
     var popupContent = '<table>' \
         '<tr>' \
         '<th scope="row">Nama</th>' \
-        '<td>' + (feature.properties['Wisata Bud'] !== null ? autolinker.link(feature.properties['Wisata Bud'].toLocaleString()) : '') + '</td>' +
+        '<td>' \ (feature.properties['Wisata Bud'] !== null ? autolinker.link(feature.properties['Wisata Bud'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
-        '<td colspan="2"><strong>Alamat</strong><br />' + (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') + '</td>' +
+        '<td colspan="2"><strong>Alamat</strong><br />' \ (feature.properties['Desc_Alamat'] !== null ? autolinker.link(feature.properties['Desc_Alamat'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
         '<th scope="row">Pengelola</th>' \
-        '<td>' + (feature.properties['Desc_Pengelola'] !== null ? autolinker.link(feature.properties['Desc_Pengelola'].toLocaleString()) : '') + '</td>' +
+        '<td>' \ (feature.properties['Desc_Pengelola'] !== null ? autolinker.link(feature.properties['Desc_Pengelola'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
         '<th scope="row">HTM</th>' \
-        '<td>' + (feature.properties['Desc_HTM'] !== null ? autolinker.link(feature.properties['Desc_HTM'].toLocaleString()) : '') + '</td>' +
+        '<td>' \ (feature.properties['Desc_HTM'] !== null ? autolinker.link(feature.properties['Desc_HTM'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
         '<th scope="row">Jam Operasional</th>' \
-        '<td>' + (feature.properties['Desc_Jam Operational'] !== null ? autolinker.link(feature.properties['Desc_Jam Operational'].toLocaleString()) : '') + '</td>' +
+        '<td>' \ (feature.properties['Desc_Jam Operational'] !== null ? autolinker.link(feature.properties['Desc_Jam Operational'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
         '<th scope="row">Kategori</th>' \
-        '<td>' + (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') + '</td>' +
+        '<td>' \ (feature.properties['Desc_Kategori'] !== null ? autolinker.link(feature.properties['Desc_Kategori'].toLocaleString()) : '') \ '</td>' \
         '</tr>' \
         '<tr>' \
-        '<td colspan="2">' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '" class="popupImage">' : '') + '</td>' +
+        '<td colspan="2">' \ (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() \ '" class="popupImage">' : '') \ '</td>' \
         '</tr>' \
         '</table>';
     layer.bindPopup(popupContent, {maxHeight: 400});
